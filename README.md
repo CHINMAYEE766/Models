@@ -1,19 +1,67 @@
-Robust License Plate Detection in Low-Light & Blurry Conditions Duration: December 2024 – January 2025 Technologies: PyTorch, CUDA, YOLOv10, MIRNet, DeblurGAN, ESRGAN
 
-Overview This project focuses on developing a GPU-accelerated deep learning pipeline for robust license plate detection under low-light and motion-blur conditions. By integrating a series of enhancement models before detection, we significantly improved object detection accuracy in real-world challenging environments.
+# 🚘 Robust License Plate Detection in Low-Light & Blurry Conditions
 
-Key Features 🔧 End-to-End Pipeline: From image enhancement to license plate detection.
+## 📅 Duration
 
-🚀 GPU Acceleration: Leveraged CUDA with PyTorch to optimize performance.
+**December 2024 – January 2025**
 
-📈 Improved Detection Accuracy: Enhanced YOLOv10 results using pre-processing techniques.
+## 🛠 Technologies Used
 
-📸 Real-world Scenarios: Tested on images with poor lighting and motion-induced blur.
+* PyTorch
+* CUDA
+* YOLOv10
+* MIRNet
+* DeblurGAN
+* ESRGAN
 
-Architecture scss Copy Edit Raw Image └──▶ MIRNet (Denoising) └──▶ DeblurGAN (Deblurring) └──▶ ESRGAN (Super-Resolution) └──▶ YOLOv10 (License Plate Detection) Models Used MIRNet – Denoises low-light images using multi-scale residual learning.
+---
 
-DeblurGAN – Removes motion and defocus blur through adversarial training.
+## 📖 Overview
 
-ESRGAN – Upscales image resolution for enhanced feature extraction.
+This project focuses on building a **GPU-accelerated deep learning pipeline** for **robust license plate detection in low-light and motion-blur scenarios**.
+By integrating advanced image enhancement models prior to detection, the system significantly improves object detection accuracy in real-world challenging conditions.
 
-YOLOv10 – State-of-the-art object detector for license plate localization.
+---
+
+## 🧩 Key Features
+
+* **🔧 End-to-End Pipeline:**
+  Complete flow from image enhancement to license plate detection.
+
+* **🚀 GPU Acceleration:**
+  Optimized for performance using **CUDA with PyTorch**.
+
+* **📈 Improved Detection Accuracy:**
+  Applied pre-processing models to enhance YOLOv10 detection outcomes.
+
+* **📸 Real-World Testing:**
+  Evaluated on images with poor lighting and motion blur to validate robustness.
+
+---
+
+## 🏗️ Architecture
+
+```
+Input Image  
+   └──▶ MIRNet (Denoising)  
+         └──▶ DeblurGAN (Deblurring)  
+               └──▶ ESRGAN (Super-Resolution)  
+                     └──▶ YOLOv10 (License Plate Detection)  
+```
+
+---
+
+## 🧪 Models Used
+
+* **MIRNet:**
+  Denoises low-light images using multi-scale residual learning.
+
+* **DeblurGAN:**
+  Removes motion and defocus blur through adversarial training.
+
+* **ESRGAN:**
+  Upscales image resolution to improve feature extraction.
+
+* **YOLOv10:**
+  State-of-the-art object detection model for accurate license plate localization.
+
